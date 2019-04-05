@@ -1,0 +1,42 @@
+{
+    "name": "delubyo/candt-php-workshop",
+    "description": "Learn PHP with this workshop",
+    "keywords": [
+        "cli",
+        "console",
+        "terminal",
+        "php",
+        "workshop",
+        "learning",
+        "education"
+    ],
+    "homepage": "https://www.codeandtheory.com",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Albert Rosete",
+            "email": "albert.rosete@codeandtheory.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.6",
+        "php-school/php-workshop": "^2.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~4.1",
+        "squizlabs/php_codesniffer": "~2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Delubyo\\CandTPHPWorkshop\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Delubyo\\CandTPHPWorkshopTest\\": "test"
+        }
+    },
+    "bin": [
+        "bin/candt-php"
+    ]
+}
