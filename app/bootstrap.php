@@ -21,12 +21,14 @@ switch (true) {
 
 use PhpSchool\PhpWorkshop\Application;
 use Delubyo\CandTPHPWorkshop\Exercise\HelloWorld;
+use Delubyo\CandTPHPWorkshop\Exercise\AcceptArgs;
 
 $app = new Application('Code and Theory PHP Workshop', __DIR__ . '/config.php');
 
 //$app->addExercise(...);
 //$app->addExercise(...);
 $app->addExercise(HelloWorld::class);
+$app->addExercise(AcceptArgs::class);
 
 $art = <<<ART
         _ __ _
